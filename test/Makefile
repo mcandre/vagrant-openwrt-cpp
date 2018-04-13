@@ -8,6 +8,7 @@ test-boot:
 	vagrant up
 
 test-compile: test-boot
+	vagrant ssh -c "sudo find /vagrant -exec chown vagrant:vagrant {} +"
 	vagrant ssh -c "cd /vagrant && g++ -o hello hello.cpp && ./hello"
 
 clean-vm:
