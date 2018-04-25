@@ -2,7 +2,8 @@
 
 # VAGRANT CLOUD
 
-https://app.vagrantup.com/mcandre/boxes/vagrant-openwrt-cpp
+* https://app.vagrantup.com/mcandre/boxes/vagrant-openwrt-cpp-amd64
+* https://app.vagrantup.com/mcandre/boxes/vagrant-openwrt-cpp-i386
 
 # EXAMPLE
 
