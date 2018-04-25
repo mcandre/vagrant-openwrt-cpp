@@ -7,7 +7,7 @@ https://app.vagrantup.com/mcandre/boxes/vagrant-openwrt-cpp
 # EXAMPLE
 
 ```console
-$ cd test
+$ cd amd64/test
 $ vagrant up
 $ vagrant ssh -c "cd /vagrant && g++ -o hello hello.cpp && ./hello"
 Hello World!
@@ -39,5 +39,6 @@ $ vagrant ssh -c "sudo find /vagrant -exec chown vagrant:vagrant {} +"
 # EXPORT
 
 ```console
-$ make vagrant-openwrt-cpp.box
+$ sh -c "cd amd64 && make vagrant-openwrt-cpp-amd64.box"
+$ sh -c "cd i386 && make vagrant-openwrt-cpp-i386.box"
 ```
